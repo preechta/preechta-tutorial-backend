@@ -4,13 +4,13 @@ on:
     branches:    
       - develop
   workflow_dispatch:
-  jobs:
+jobs:
   unitest:
     name: UnitTest (XUnit)
     runs-on: ubuntu-latest
     environment:
       name: dev
-      steps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
