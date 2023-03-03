@@ -79,7 +79,7 @@ jobs:
     needs: [unitest,analyze]
     environment:
       name: dev
-      url: https://github.com/<username>/<username>-tutorial-backend/actions/workflows/dev-tutorial-backend-deploy.yml
+      url: https://github.com/preechta/preechta-tutorial-backend/actions/workflows/dev-tutorial-backend-deploy.yml
 
     steps:
     - name: Repository Dispatch
