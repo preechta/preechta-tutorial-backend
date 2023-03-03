@@ -85,7 +85,7 @@ jobs:
     - name: Repository Dispatch
       uses: peter-evans/repository-dispatch@v1
       with:
-        token: ${{ secrets.WORKFLOW_TOKEN }}
-        repository: <username>/<username>-pipeline
-        event-type: <username>-tutorial-backend-cd-dev
+        token: ${{ secrets.WORKFLOWS_TOKEN }}
+        repository: preechta/preechta-pipeline
+        event-type: preechta-tutorial-backend-cd-dev
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
